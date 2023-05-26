@@ -2,57 +2,118 @@
 <html lang="en">
 
 <head>
-  <title>Peka.in</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peka.in</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" href="asset/logo.svg">
-  <link rel="stylesheet" href="src/css/style.css" />
-  <link rel="stylesheet" href="./src/vendor/css/bootstrap-grid.css">
-  <link rel="stylesheet" href="./src/vendor/css/bootstrap.css">
-  <link rel="stylesheet" href="./src/vendor/css/">
+    <link rel="icon" href="asset/logo.svg">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./src/vendor/css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/vendor/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/vendor/css/">
 </head>
 
 <body>
-  <!-- navbar -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <img src="./src/image/logoPeka3.png" alt="" width="50px">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Deteksi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dictionary</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <!-- akhir navbar -->
+
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="/"><img src="/src/image/logoPeka3.png" href="/" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="nav justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deteksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dictionary.html">Dictionary</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <img src="./src/image/assetsbg.svg" class="background" alt="">
+    <!-- akhir navbar -->
+
+    <!-- Deskripsi -->
+    <div class="container deskripsi">
+        <div class="row ">
+            <div class="col-sm-6">
+                <!-- Deskripsi Aplikasi -->
+                <img src="./src/image/logojudul.svg" width="500px" alt="">
+                <p class="text-justify my-auto">
+                    WebApp Peka.in Ini adalah platform inovatif yang menggabungkan keajaiban bahasa dan kekuatan gambar untuk memfasilitasi komunikasi yang lebih kaya dan ekspresif. Dengan WebApp ini, Anda dapat menggambarkan ide, konsep, dan cerita dengan menggunakan ilustrasi
+                    yang menarik dan memikat.
+                </p>
+                <img src="./src/image/bintik.svg" class="my-3">
+                <br>
+                <a href="deteksi.html"><button type="button" class="btn btn-start"><p>Mulai</p></button></a>
+            </div>
+            <div class="col-sm-6 ">
+                <!-- Gambar Deskripsi Aplikasi -->
+                <img src="./src/image/contoh.png " class="img-fluid " width="800 "></img>
+            </div>
+        </div>
+    </div>
+    <!-- akhir deksripsi -->
 
 
-  <!-- footer -->
-  <footer class="text-center ">Copyright 2023 @Peka<span class="text-warna">.in</span>
-  </footer>
-  <!-- akhir footer -->
+    <!--Fitur fitur  -->
+    <div class="container fitur">
+        <div class=" row margin">
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <h2 class="mb-5">Kamus <span class="warna ">Bahasa Isyarat</span> </h2>
+                    <a href="dictionary.html"><img src="./src/image/fitur.svg " class="img-fluid" width="450px "></a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <h2 class="mb-5">Deteksi <span class="warna ">Bahasa Isyarat</span></h2>
+                    <a href="deteksi.html"><img src="./src/image/fitur2.svg " class="img-fluid " width="300px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- akhir fitur -->
+
+    <!-- footer -->
+    <footer class="bg-dark text-white d-flex">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="p-2">
+                        ©2023 Copyright:
+                        <a class="text-white" href="/">Peka<span class="warna">.in</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-2 float-right">
+                        <a href=""><i class="fa fa-brands fa-github fa-2x mx-2"></i></a>
+                        <a href=""><i class="fa sfa-solid fa-database fa-2x mx-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
 
 
-  <!--All Script-->
-  <script src="./src/vendor/js/bootstrap.js"></script>
-  <script src="./src/vendor/js/bootstrap.bundle.js"></script>
-  <!-- <script type="text/javascript" src="src/app.js"></script> -->
+    <!--All Script-->
+    <script src="./src/vendor/js/bootstrap.js "></script>
+    <script src="./src/vendor/js/bootstrap.bundle.js "></script>
+    <!-- <script type="text/javascript " src="src/app.js "></script> -->
 </body>
 
 </html>
