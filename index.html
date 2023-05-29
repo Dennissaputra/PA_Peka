@@ -16,21 +16,19 @@
 </head>
 
 <body>
-
-    <!-- navbar -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <a href="/"><img src="/src/image/logoPeka3.png" href="/" width="50px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center">
-                <ul class="nav justify-content-center ">
+                <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Deteksi</a>
+                        <a class="nav-link" href="deteksi.html">Deteksi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
@@ -42,15 +40,18 @@
             </div>
         </nav>
     </div>
-    <img src="./src/image/assetsbg.svg" class="background" alt="">
+<div class="background1">
+    
+    <!-- navbar -->
+    
     <!-- akhir navbar -->
 
     <!-- Deskripsi -->
-    <div class="container deskripsi">
-        <div class="row ">
+    <div class="container  deskripsi">
+        <div class="row d-flex">
             <div class="col-sm-6">
                 <!-- Deskripsi Aplikasi -->
-                <img src="./src/image/logojudul.svg" width="500px" alt="">
+                <img src="./src/image/logojudul.svg" width="500px" class="img-responsive  img-fluid">
                 <p class="text-justify my-auto">
                     WebApp Peka.in Ini adalah platform inovatif yang menggabungkan keajaiban bahasa dan kekuatan gambar untuk memfasilitasi komunikasi yang lebih kaya dan ekspresif. Dengan WebApp ini, Anda dapat menggambarkan ide, konsep, dan cerita dengan menggunakan ilustrasi
                     yang menarik dan memikat.
@@ -59,7 +60,7 @@
                 <br>
                 <a href="deteksi.html"><button type="button" class="btn btn-start"><p>Mulai</p></button></a>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-sm-6 text-center">
                 <!-- Gambar Deskripsi Aplikasi -->
                 <img src="./src/image/contoh.png " class="img-fluid " width="800 "></img>
             </div>
@@ -69,19 +70,20 @@
 
 
     <!--Fitur fitur  -->
-    <div class="container fitur">
+    <div class="container fitur text-center">
+        <h2 class="font-weight-bold ">Fitur - <span class="warna">Fitur</span></h2>
         <div class=" row margin">
             <div class="col-sm-6">
-                <div class="text-center">
-                    <h2 class="mb-5">Kamus <span class="warna ">Bahasa Isyarat</span> </h2>
-                    <a href="dictionary.html"><img src="./src/image/fitur.svg " class="img-fluid" width="450px "></a>
-                </div>
+                    <a href="dictionary.html"><img src="/src/image/fitur1.png" class="img-fluid img-responsive" width="450px "></a>
+                    <div  class="body">
+                        <p>Kamus <span class="warna ">Bahasa Isyarat</span> </>
+                    </div>
             </div>
-            <div class="col-sm-6">
-                <div class="text-center">
-                    <h2 class="mb-5">Deteksi <span class="warna ">Bahasa Isyarat</span></h2>
-                    <a href="deteksi.html"><img src="./src/image/fitur2.svg " class="img-fluid " width="300px"></a>
-                </div>
+            <div class="col-sm-6">                 
+                    <a href="deteksi.html"><img src="/src/image/fitur2.png" class="img-fluid img-responsive" width="450px"></a>
+                    <div class="body">
+                        <p>Deteksi <span class="warna ">Bahasa Isyarat</span></>
+                    </div>
             </div>
         </div>
     </div>
@@ -90,24 +92,26 @@
 
     <!-- footer -->
     <footer class="bg-dark text-white d-flex">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="p-2">
+                    <div class="p-3">
                         ©2023 Copyright:
                         <a class="text-white" href="/">Peka<span class="warna">.in</span></a>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="p-2 float-right">
+                    <div class="p-2 ">
                         <a href=""><i class="fa fa-brands fa-github fa-2x mx-2"></i></a>
-                        <a href=""><i class="fa sfa-solid fa-database fa-2x mx-2"></i></a>
+                        <a href=""><i class="fa fa-solid fa-database fa-2x mx-2"></i></a>
+                        <a href=""><i class="fa fa-solid fa-file fa-2x mx-2"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- akhir footer -->
+
 
 
     <!--All Script-->
