@@ -401,6 +401,10 @@ canvas {
     font-size: 30px;
   }
 
+  .search_section input{
+    font-size: 25px;
+  }
+
   .text-kamus{
     font-size: 20px;
     height: 30px;
