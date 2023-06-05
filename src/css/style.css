@@ -2,6 +2,7 @@
 * {
   font-family: "Poppins", sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +82,7 @@ body {
   display: none;
   border-radius: 100%;
   background-color: #ff2e00;
+  z-index: 1;
 }
 
 .judul {
@@ -139,7 +141,8 @@ body {
 }
 
 .polaroid h4 {
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .polaroid p{
@@ -158,6 +161,16 @@ body {
   padding: 110px 100px;
 }
 
+.search_section{
+  padding-top: 20px;
+}
+
+.search_section input{
+  font-size: 30px;
+  color: #061431;
+  border-radius: 30px;
+}
+
 .text-kamus {
   font-size: 25px;
   font-weight: bold;
@@ -172,13 +185,13 @@ body {
 
 /* deteksi */
 .scan {
-  height: 110vh;
+  height: 120vh;
   padding-top: 110px;
 }
 
-#webcam-container {
-  width: 850px;
-  height: 450px;
+.scan .webcam-container {
+  width: 650px;
+  height: 490px;
   margin: 0 auto;
   border-radius: 10px;
   border: 5px solid #ffffff;
@@ -189,11 +202,59 @@ body {
 .tombol {
   font-size: 20px !important;
 }
+
+#body {
+  position: relative;
+}
+
+#body video {
+  transition: filter 250ms linear;
+}
+
+#body.loading video {
+  filter: grayscale(1) brightness(0.25);
+}
+
+#body.loading:before {
+  content: "Loading Model...";
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 100;
+}
+
+canvas{
+  position: absolute;
+  z-index: 9999;
+}
+
+video,
+canvas {
+  width: 100%;
+  /* margin: 0 50px 0 50px; */
+}
+
+#fps {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+#fps:empty {
+  display: none;
+}
+
+#fps:after {
+  content: " fps";
+}
+
 /* akhir deteksi */
 
 /* footer */
-footer {
-}
 .footer {
   font-size: 30px;
   background-color: #292929;
@@ -229,7 +290,7 @@ footer {
     padding: 200px;
     height: 100vh;
   }
-  #webcam-container {
+  .webcam-container {
     width: 640px;
     height: 410px;
     border-radius: 10px;
@@ -282,21 +343,40 @@ footer {
 
   /* deteksi */
   .scan {
+
     padding: 50%;
     height: 90vh;
   }
 
-  #webcam-container {
+  .scan .webcam-container {
     width: 290px;
-    height: 210px;
+    height: 220px;
     margin: 0 auto;
     border-radius: 10px;
     margin: 20px;
   }
+  
+  #body.loading:before {
+    width: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 100;
+  }
+  
+  canvas{
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  video,
+  canvas {
+    width: 100%;
+    /* margin: 0 50px 0 50px; */
+  }
 
   /* aboutus */
   .aboutus {
-    height: 100vh;
+    height: 110vh;
     font-size: 14px;
   }
 
