@@ -172,14 +172,13 @@ body {
 }
 
 .text-kamus {
-  font-size: 25px;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 10px;
   color: white;
   height: 40px;
   width: 280px;
   background-color: #926e58;
-  margin: 0;
+  padding: 10 0;
 }
 /* akhir dictonary */
 
@@ -406,7 +405,6 @@ canvas {
   }
 
   .text-kamus{
-    font-size: 20px;
     height: 30px;
     width: 150px;
   }

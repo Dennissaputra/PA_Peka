@@ -26,9 +26,9 @@ function startVidio() {
 
     
   
-        var publishable_key = "rf_mC5Kq8uY4EcwrClODbky";
+        var publishable_key = "rf_ZdObsyvej6QrIhYuVJeQ5gvb1Er2";
         var toLoad = {
-            model: "slebew",
+            model: "deteksi-bahasa",
             version: 1
         };
     
