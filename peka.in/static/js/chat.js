@@ -9,6 +9,7 @@ const PERSON_IMG = "/static/images/user.png";
 const BOT_NAME = "PEKABOT";
 const PERSON_NAME = "Kamu";
 
+
 msgerForm.addEventListener("submit", event => {
     event.preventDefault();
 
@@ -66,3 +67,12 @@ function formatDate(date) {
 
     return `${h.slice(-2)}:${m.slice(-2)}`;
 }
+
+
+// Mendapatkan elemen konten yang akan di-scroll
+var scrollableContent = document.getElementById("scrollable-content");
+
+// Otomatis scroll ke bawah ketika konten berubah
+scrollableContent.addEventListener("DOMSubtreeModified", function() {
+  scrollableContent.scrollTop = scrollableContent.scrollHeight;
+});
