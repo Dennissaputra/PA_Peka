@@ -29,9 +29,9 @@ function startVidio() {
         });
     });
 
-    var publishable_key = "rf_ZdObsyvej6QrIhYuVJeQ5gvb1Er2";
+    var publishable_key = "rf_mC5Kq8uY4EcwrClODbky";
     var toLoad = {
-        model: "deteksi-bahasa",
+        model: "projek_akhir",
         version: 1
     };
 
