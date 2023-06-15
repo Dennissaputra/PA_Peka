@@ -35,6 +35,7 @@ function startVidio() {
         version: 1
     };
 
+
     const loadModelPromise = new Promise(function (resolve, reject) {
         roboflow.auth({
                 publishable_key: publishable_key
