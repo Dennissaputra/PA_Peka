@@ -29,9 +29,9 @@ function startVidio() {
         });
     });
 
-    var publishable_key = "rf_mC5Kq8uY4EcwrClODbky";
+    var publishable_key = "rf_8Rh8XpTC4nZ9M6qcSWpQmS8gjSB2";
     var toLoad = {
-        model: "projek_akhir",
+        model: "projek-akhir-satu",
         version: 1
     };
 
